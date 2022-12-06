@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Patú Pata-referencias</title>
+	<link rel="stylesheet" type="text/css" href="referenciaspage.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0d2ea6eac1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="header">
+	<a id="logotop">
+	<div class="minilogo">
+	<img src="logotransparente.png" width="90">
+	</div>
+	</a>
+  <div class="header-right">
+    <a href="index.html">[Volver a página principal]</a>
+    <a href="#queespatupata">[Referencia 1]</a>
+    <a href="#undiseñoversatil">[Referencia 2]</a>
+
+  </div>
+  	<a href="#logobottom"><i class="fa-solid fa-link"></i></a>
+</div>
+
+	<section>
+		<h1>
+			Referencias <br>de páginas web
+		</h1>
+		<div class="icontab">
+		<i class="fa-regular fa-window-restore fa-10x"></i>
+		</div>
+	</section>
+	<section>
+		<div class="container reveal">
+			<a id="queespatupata">
+			<h2>Spectacles</h2>
+			</a>
+			<div class="cards">
+				<div class="text-card">
+					<div class="textouno">
+					<a href="https://www.spectacles.com/es/">Link</a>
+					</div>
+					<div class="imguno">
+				<IMG SRC="gifuno.gif" width=500px>
+			</div>
+			</div>
+		</div>
+	</section>
+		<section>
+		<div class="container reveal">
+			<a id="undiseñoversatil">
+			<h2>Genshin Impact</h2>
+			</a>
+			<div class="cards">
+				<div class="text-card">
+					<div class="textodos">
+					<a href="https://genshin.hoyoverse.com/es/home">Link</a>
+					</div>
+					<div class="imgdos">
+					<IMG SRC="gifdos.gif" width=500px>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<script type="text/javascript">
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+	var reveals = document.querySelectorAll('.reveal');
+
+	for(var i = 0; i < reveals.length; i++){
+
+		var windowheight = window.innerHeight;
+		var revealtop = reveals[i].getBoundingClientRect().top;
+		var revealpoint = 150;
+
+		if(revealtop < windowheight - revealpoint){
+			reveals[i].classList.add('active');
+		}
+		else{reveals[i].classList.remove('active');
+		}
+	}
+}
+</script>
+<div class="footer">
+	 <p class="footer-text-left">
+	 <a id="logobottom" href="#logotop"><img src="logotransparente.png" width="60px"></a>
+    <a href=" index.html">[página-principal]</a>
+    <a href=" antecedentes.html">[antecedentes-y-referentes]</a>
+    <a href="links.html">[bibliografía]</a>
+    <a href="marta.html">[Marta]</a>
+
+  </p>
+</div>
+</body>
+</html>
